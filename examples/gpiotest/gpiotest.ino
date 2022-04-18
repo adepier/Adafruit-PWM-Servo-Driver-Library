@@ -20,11 +20,11 @@
 #include <Adafruit_PWMServoDriver.h>
 
 // called this way, it uses the default address 0x40
-Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
+mbed_PWMServoDriver pwm = mbed_PWMServoDriver();
 // you can also call it with a different address you want
-//Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x41);
+//mbed_PWMServoDriver pwm = mbed_PWMServoDriver(0x41);
 // you can also call it with a different address and I2C interface
-//Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x40, Wire);
+//mbed_PWMServoDriver pwm = mbed_PWMServoDriver(0x40, Wire);
 
 void setup() {
   Serial.begin(9600);
